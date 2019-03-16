@@ -1,3 +1,8 @@
 <h1 align="center">Articles</h1>
-
+<div align="center">
+  <%= will_paginate @articles, list_classes: %w(pagination justify-content-center), previous_label: "Previous", next_label: "Next" %>
+</div>
 <%= render 'article', obj: @articles %>
+<div align="center">
+  <%= will_paginate @articles,list_classes: %w(pagination justify-content-center), previous_label: "Previous", next_label: "Next" %>
+</div>
